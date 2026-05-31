@@ -29,9 +29,9 @@ const mockSignals: Signal[] = [
 ];
 
 export default function SMCPowerhouseDashboard() {
-  const [activeAssetFilter, setActiveAssetFilter] = useState('all');
-  const [activeProbFilter, setActiveProbFilter] = useState('all');
-  const [selectedSignal, setSelectedSignal] = useState(null);
+  const [activeAssetFilter, setActiveAssetFilter] = useState<string>('all');
+  const [activeProbFilter, setActiveProbFilter] = useState<string>('all');
+  const [selectedSignal, setSelectedSignal] = useState<Signal | null>(null);
 
   const assets = ['all', 'XAU_USD', 'EURUSD', 'GBPJPY', 'NAS100_USD', 'BTCUSD'];
 
@@ -39,7 +39,7 @@ export default function SMCPowerhouseDashboard() {
     .filter(s => (activeAssetFilter === 'all' || s.pair === activeAssetFilter) && (activeProbFilter === 'all' || s.grade === activeProbFilter))
     .sort((a, b) => b.probability - a.probability);
 
-  const openModal = (signal) => { setSelectedSignal(signal); document.body.style.overflow = 'hidden'; };
+  const openModal = (signal: Signal) => { setSelectedSignal(signal); document.body.style.overflow = 'hidden'; };
   const closeModal = () => { setSelectedSignal(null); document.body.style.overflow = 'visible'; };
 
   return (
