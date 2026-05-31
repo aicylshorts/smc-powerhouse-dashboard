@@ -1,23 +1,14 @@
 # SMC Powerhouse Dashboard
 
-**High-Probability SMC Signals Dashboard**
+**High-Probability SMC Signals Dashboard** (Personal Use)
 
-Professional web app for Smart Money Concepts trading signals.
+Clean, premium interface for viewing high-confluence SMC setups.
 
 - Liquidity sweeps, FVGs, Order Blocks
-- A/A+ probability setups only
-- Interactive filters & detailed analysis modal
-- Performance metrics
-- Pricing tiers ready for monetization (Stripe/Paystack)
+- A/A+ probability only
+- Beautiful modern UI
+- Performance tracking
 
-**Deployed on Vercel** — Next.js 16.2.6 (secure)
+**Latest Update:** Major visual refresh + TypeScript fixes (June 2026)
 
-One-click deploy to Vercel from this repo.
-
-## Quick Start
-```bash
-npm install
-npm run dev
-```
-
-Built for Aicyl | SMC Powerhouse
+Deployed on Vercel.
